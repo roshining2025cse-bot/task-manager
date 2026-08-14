@@ -28,7 +28,7 @@ function Dashboard() {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/tasks",
+        "https://task-manager-backend-f990.onrender.com/api/tasks",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -82,7 +82,7 @@ function Dashboard() {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/tasks",
+        "https://task-manager-backend-f990.onrender.com/api/tasks",
         {
           method: "POST",
 
@@ -131,7 +131,7 @@ function Dashboard() {
     try {
 
       const response = await fetch(
-        `http://localhost:5000/api/tasks/${id}`,
+        `https://task-manager-backend-f990.onrender.com/api/tasks/${id}`,
         {
           method: "DELETE",
 
@@ -190,7 +190,7 @@ const updateTask = async (id, updatedTask) => {
     console.log("Updating:", updatedTask);
 
     const response = await fetch(
-      `http://localhost:5000/api/tasks/${id}`,
+      `https://task-manager-backend-f990.onrender.com/api/tasks/${id}`,
       {
         method: "PUT",
 
@@ -234,7 +234,7 @@ const completeTask = async (task) => {
   try {
     console.log("Completing task:", task);
     const response = await fetch(
-      `http://localhost:5000/api/tasks/${task._id}`,
+      `https://task-manager-backend-f990.onrender.com/api/tasks/${task._id}`,
       {
         method: "PUT",
 

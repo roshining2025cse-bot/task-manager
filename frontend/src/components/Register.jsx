@@ -33,7 +33,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/register",
+        "https://task-manager-backend-f990.onrender.com/api/auth/register",
         {
           method: "POST",
 
